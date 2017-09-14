@@ -11,7 +11,7 @@ def main(): #set up main function
     play = input("Please choose Rock Paper or Scissors...")  #ask user to make a move
     comp = (randrange(1,4,1))             #get computer to make a randome move
 
-    if comp == 1:
+    if comp == 1:#set each random number to a value in the game
         dvalue = "Rock"
         print("Computer chose Rock")
     if comp == 2:
@@ -23,7 +23,7 @@ def main(): #set up main function
     
     
     
-    if play == dvalue:
+    if play == dvalue:#write out the possible combinations and tell the computer how to decide who wins
         print ("It's a tie")
     
     elif play == "Rock" and dvalue == "Paper":
